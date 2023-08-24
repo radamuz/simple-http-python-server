@@ -6,7 +6,7 @@ class MyRequestHandler(BaseHTTPRequestHandler):
         self.send_header('Access-Control-Allow-Origin', 'http://localhost')
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
-        self.wfile.write(b'¡Hola desde el servidor!')
+        self.wfile.write(b'Hola desde el servidor')
 
 def run():
     address = ('', 8000)
